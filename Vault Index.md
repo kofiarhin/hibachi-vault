@@ -1,7 +1,7 @@
 ---
 type: vault-index
 version: 1
-updated: 2026-08-01
+updated: 2026-08-02
 tags:
   - hibachi
   - vault-index
@@ -101,6 +101,10 @@ Project overview:
 
 - [[20 Projects/Hibachi/Project]]
 
+Ideas Hub source snapshot:
+
+- [[20 Projects/Hibachi/Ideas Hub Snapshot]]
+
 Project tasks:
 
 - [[20 Projects/Hibachi/Tasks]]
@@ -109,6 +113,21 @@ Useful tags:
 
 - `#project/hibachi`
 - `#status/active`
+- `#source/ideas-hub`
+
+### Nexus
+
+Path: `20 Projects/Nexus/`
+
+Project overview and Ideas Hub source snapshot:
+
+- [[20 Projects/Nexus/Project]]
+
+Useful tags:
+
+- `#project/nexus`
+- `#status/active`
+- `#source/ideas-hub`
 
 ## Areas
 
