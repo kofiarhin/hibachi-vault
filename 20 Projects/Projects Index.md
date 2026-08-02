@@ -20,7 +20,8 @@ This note is the concise project resolver for Hibachi. Load a project note only 
 
 - Canonical note: [[20 Projects/Hibachi/Project]]
 - Tasks: [[20 Projects/Hibachi/Tasks]]
-- Repository: https://github.com/kofiarhin/hibachi
+- Application repository: https://github.com/kofiarhin/hibachi
+- Vault repository: https://github.com/kofiarhin/hibachi-vault
 - Focus: local-first voice engineering and operations assistant.
 
 ### Nexus
