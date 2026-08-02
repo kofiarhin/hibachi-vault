@@ -6,6 +6,7 @@ created: 2026-08-01
 updated: 2026-08-02
 sources:
   - kofiarhin/hibachi
+  - kofiarhin/hibachi-vault
   - kofiarhin/ideahub/projects/hibachi.md
 tags:
   - project/hibachi
@@ -18,23 +19,28 @@ Search tags: #project/hibachi #status/active #local-first #voice #engineering-as
 
 ## Outcome
 
-Build a local-first, voice-driven engineering and operations assistant for one owner on native Windows. Hibachi uses a browser UI, a localhost Node.js companion service, MongoDB operational history, Obsidian durable knowledge, Claude Code reasoning, and typed governed tools.
+Build a local-first, voice-driven engineering and operations assistant for one owner on native Windows. Hibachi uses a browser UI, a localhost Node.js companion service, MongoDB operational history, Obsidian durable knowledge, governed coding-agent reasoning, and typed controlled tools.
 
 ## Current state
 
-- Repository: https://github.com/kofiarhin/hibachi
-- The repository contains the React/Vite/Tailwind client, Node.js/Express companion service, shared schemas, MongoDB models, Obsidian tools, controlled execution tools, startup scripts, policy files, and test suites.
+- Application repository: https://github.com/kofiarhin/hibachi
+- Vault repository: https://github.com/kofiarhin/hibachi-vault
+- The vault repository was renamed from the mistaken `kofiarhin/hibachi-bault` slug on 2026-08-02; `kofiarhin/hibachi-vault` is canonical.
+- The application repository contains the React/Vite/Tailwind client, Node.js/Express companion service, shared schemas, MongoDB models, Obsidian tools, controlled execution tools, startup scripts, policy files, and test suites.
 - The browser interface has been changed from the initial dashboard into an immersive full-screen visualizer and command interface.
-- Claude Code subprocess readiness and failure diagnostics have been hardened so unavailable, unauthenticated, incompatible, and runtime failure states are distinguishable.
+- Claude Code and Codex subprocess readiness, isolation, diagnostics, and failure handling have been implemented and hardened through repository changes.
 - The current implementation supports deterministic Vault Index retrieval, targeted Markdown search, note reading, safe creation and append, and governed higher-risk note operations with backups.
+- Windows vault-path configuration handling was improved at application commit `d3ec4783c7415b62a322511575722a469275bcd4`.
+- This vault’s curated operating context was merged to `main` at commit `6c5d2a383374266edc013a7b0c4f6b9fb2fa113f`.
 - A redistributable wake-word model is not bundled; push-to-talk remains the reliable input path.
-- Full local verification was not rerun as part of this vault population and must be treated as pending for the current repository revision.
+- Full local verification was not rerun as part of the repository rename and must be treated as pending for the current application revision.
 
 ## Current focus
 
+- Update local Git remotes or configuration that still use `hibachi-bault`.
 - Configure the local machine dependencies and environment.
-- Point `OBSIDIAN_VAULT_PATH` at this vault and verify `Vault Index.md` retrieval.
-- Run the complete verification suite against the current repository revision.
+- Point `OBSIDIAN_VAULT_PATH` at the local clone of `kofiarhin/hibachi-vault` and verify `Vault Index.md` retrieval.
+- Run the complete verification suite against the current application repository revision.
 - Validate the end-to-end local startup, command, Obsidian retrieval, and governed execution flows on Windows.
 
 ## Canonical links
@@ -54,7 +60,7 @@ Build a local-first, voice-driven engineering and operations assistant for one o
 - Local `whisper.cpp` transcription and browser speech synthesis.
 - MongoDB conversation and workflow history.
 - Obsidian long-term knowledge retrieval and note capture.
-- Claude Code reasoning with Hibachi-controlled tool execution.
+- Governed coding-agent reasoning with Hibachi-controlled tool execution.
 - Grill, execution contracts, explicit approval, and protected-change confirmation.
 - Registered project workspaces, Git safety, verification, draft pull requests, and Vercel preview deployments.
 - Read-only public web research through isolated Crawlee and Playwright.
@@ -64,10 +70,11 @@ Build a local-first, voice-driven engineering and operations assistant for one o
 - Windows, Edge, and Chrome are the first supported platform and browsers.
 - Use one root `package.json` with npm workspaces for `client`, `server`, and `packages/shared`.
 - Use MongoDB for operational history and Obsidian for user-owned durable knowledge.
+- Use `kofiarhin/hibachi-vault` as the canonical GitHub repository for this curated vault.
 - Read `Vault Index.md` first, then use targeted folder, filename, tag, link, and text search.
 - Do not use embeddings or a vector database in the MVP.
-- Claude Code proposes; Hibachi applies validated actions through typed allowlisted tools.
-- Direct `main` changes, merges, production deployments, arbitrary shell execution, and administrator operations remain blocked.
+- Coding agents propose; Hibachi applies validated actions through typed allowlisted tools.
+- Direct `main` changes, merges, production deployments, arbitrary shell execution, and administrator operations remain blocked inside Hibachi’s own governed execution model.
 - Code-changing work requires a clean repository, task branch, Git checkpoint, verification, and approved scope.
 
 ## Known limitations
@@ -75,9 +82,12 @@ Build a local-first, voice-driven engineering and operations assistant for one o
 - Wake-word activation is unavailable until a compatible local model is added.
 - The MVP is single-owner and Windows-first.
 - Gmail, Calendar, Telegram, proactive scheduling, production deployment, and PR merge are outside the MVP.
+- Complete local verification for the exact current application revision is not yet recorded in this note.
 
 ## Evidence
 
-- Application repository README and source on `kofiarhin/hibachi`.
-- Recent repository commits through `5c03c7e8f55a51398ad0cb6c2e34cef4b0f3703c` observed on 2026-08-02.
+- Application repository README, source, and commits in `kofiarhin/hibachi`.
+- Latest observed application commit: `d3ec4783c7415b62a322511575722a469275bcd4` on 2026-08-02.
+- Canonical vault repository: `kofiarhin/hibachi-vault`.
+- Curated vault population merge commit: `6c5d2a383374266edc013a7b0c4f6b9fb2fa113f`.
 - Durable product decisions curated from `kofiarhin/ideahub/projects/hibachi.md`.
